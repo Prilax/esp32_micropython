@@ -12,27 +12,15 @@ np =neopixel.NeoPixel(machine.Pin(48),1)
 
 while True:
     try:
-        np[0]=[255,0,0]
+        np[0] =[255,255,0]
         np.write()
-        time.sleep(0.1)
-        np[0]=[0,255,0]
+        time.sleep(2)
+        np[0] =[0,255,0]
         np.write()
-        time.sleep(0.1)
-        np[0]=[0,0,255]
+        time.sleep(2)
+        np[0] =[0,0,255]
         np.write()
-        time.sleep(0.1)
-        np[0]=[255,255,0]
-        np.write()
-        time.sleep(0.1)
-        np[0]=[128,0,128]
-        np.write()
-        time.sleep(0.1)
-        np[0]=[255,0,255]
-        np.write()
-        time.sleep(0.1)
-        np[0]=[255,192,203]
-        np.write()
-        time.sleep(0.1)
+        time.sleep(2)
     except KeyboardInterrupt:
         print("EXIT")
         break

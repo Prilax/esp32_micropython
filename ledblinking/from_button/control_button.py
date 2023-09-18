@@ -10,6 +10,9 @@ import time
 #led_pin = machine.Pin(8,machine.Pin.OUT)
 
 led = machine.Pin(8,machine.Pin.OUT)
+
+#object for button
+button =mac
 while True:
     try:
          ''' led_pin.on()
